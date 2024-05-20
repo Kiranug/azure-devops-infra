@@ -1,0 +1,30 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "vmName": {
+            "value": "myVM"
+        },
+        "vmSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "adminUsername": {
+            "value": "adminUser"
+        },
+        "adminPassword": {
+            "value": "YourSecurePassword@123!"  // Note: Ensure to use a secure password
+        },
+        "subnetId": {
+            "value": "/subscriptions/6b06bb66-681d-44da-8a5c-75d27eba8d1d/resourceGroups/mynewrg-dev/providers/Microsoft.Network/virtualNetworks/myVnet-dev/subnets/subnet1"
+        },
+        "nsgId": {
+            "value": "/subscriptions/6b06bb66-681d-44da-8a5c-75d27eba8d1d/resourceGroups/mynewrg-dev/providers/Microsoft.Network/networkSecurityGroups/myNSG"
+        }
+    }
+}

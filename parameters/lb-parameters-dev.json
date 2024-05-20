@@ -1,0 +1,15 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "loadBalancerName": {
+            "value": "myLoadBalancer-dev"
+        },
+        "subnetId": {
+            "value": "/subscriptions/6b06bb66-681d-44da-8a5c-75d27eba8d1d/resourceGroups/mynewrg/providers/Microsoft.Network/virtualNetworks/myVnet-dev/subnets/subnet1"
+        }
+    }
+}
